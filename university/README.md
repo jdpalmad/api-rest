@@ -3,9 +3,12 @@
 Today we built a responsive app with alerts. This uses the MTV (Model, Template, View) and the *Object Relational Mapping* implemented by Django.
 Also we use Bootstrap, CSS and some event management involving JavaScript.
 <br>
-![](./crud-alert.JPG)
-<br/><br/>
-![](./crud-ask.JPG)
+
+
+![](https://github.com/jdpalmad/api-rest/blob/main/university/crud-alert.jpg)
+</br> </br>
+![](https://github.com/jdpalmad/api-rest/blob/main/university/crud-ask.jpg)
+
 
 
 
