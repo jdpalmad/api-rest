@@ -1,0 +1,72 @@
+{% extends "./base.html" %}
+
+{% block body %}
+
+<h1>We are in the Classes Management Dashboard</h1>
+<ul>
+    
+</ul>
+
+<div class = 'row'>
+    <div class = "col-sm-12 col-md-6 col-lg-4 col-xl-4">
+    {% if messages %}
+    {% for message in messages %}
+        <div class = 'alert alert-dismissible alert-success'>
+            <button type = 'button' class = 'btn-close' data-bs-dismiss = 'alert'>&times;</button>
+            <strong class = 'text-dark'> {{ message }}</strong>
+        </div>
+    {% endfor %}
+    {% endif %}
+    <h1>Class Management</h1>
+        <div class = 'card py-2'>
+            <div class = 'card-body'>
+                <form action = "/addClass/" method = 'POST'> {% csrf_token %}
+                    <div class = "form-group py-2">
+                        <input type = 'text' id = 'txtCode' name = 'txtCode' clas1s = 'form-control' placeholder="Code" minlength="6" maxlength="6" required>
+                    </div>   
+                    <div class = "form-group py-2">
+                        <input type = 'text' id = 'txtName' name = 'txtName' class = 'form-control' placeholder="Name" maxlength="50" required>
+                    </div>
+                    <div class = "form-group py-2">
+                        <input type = 'text' id = 'numCredits' name = 'numCredits' class = 'form-control' min="1" max="9" value = '1' required>
+                    </div>
+                    <div class = "form-group py-2">
+                        <button type = 'submit' class = 'btn btn-success btn-block text-blue py-2'>
+                            Add Class
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class = "col-sm-12 col-md-6 col-lg-8 col-xl-8">
+        <h1>Avaliable Classes</h1>
+        <div class = 'table-responsived py-2'>
+            <table class = "table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Credits</th>
+                        <th colspan = "2"> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for class in classes %}
+                    <tr>
+                    <td>{{forloop.counter}}</td>
+                    <td>{{class.name}}</td>
+                    <td>{{class.code}}</td>
+                    <td>{{class.credits}}</td>
+                    <td><a href = "editionClass/{{class.code}}" class = "btn btn-info">Edit</a></td>
+                    <td><a href = "deleteClass/{{class.code}}" class = "btn btn-danger btnDelete">Delete</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+</div>
+{% endblock %}
+
+
