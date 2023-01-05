@@ -6,8 +6,7 @@ Also we use Bootstrap, CSS and some event management involving JavaScript.
 
 
 ![](./crud-alert.JPG)
-<br/><br/>
-![](./crud-ask.JPG)
+
 
 
 
