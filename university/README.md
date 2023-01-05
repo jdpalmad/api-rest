@@ -5,7 +5,7 @@ Also we use Bootstrap, CSS and some event management involving JavaScript.
 <br>
 
 
-![](./crud-alert.JPG)
+![](https://github.com/jdpalmad/api-rest/blob/main/university/crud-alert.jpg)
 
 
 
