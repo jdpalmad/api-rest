@@ -12,9 +12,7 @@ Also we will make a raw frontend where we can also listen to some events.
 </br> </br>
 ![](https://github.com/jdpalmad/api-rest/blob/main/to-do-list/imgsgh/crud-p1.jpg)
 </br> </br>
-<p align="center">
 ![](https://github.com/jdpalmad/api-rest/blob/main/to-do-list/imgsgh/crud-p2.jpg)
-</p>
 </br> </br>
 ![](https://github.com/jdpalmad/api-rest/blob/main/to-do-list/imgsgh/crud-p3.jpg)
 
