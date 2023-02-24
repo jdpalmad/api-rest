@@ -1,0 +1,27 @@
+{
+  "name": "to-do-list",
+  "version": "0.0.1",
+  "description": "Today we built a basic app. Also we will explore some modules from Nodejs like *Express*, *Handlebars*, *Babel*, *Moongose*, and some others. Also we will make a raw frontend where we can also listen to some events. <br>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build" : "babel src -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "mongoose": "^6.8.3",
+    "morgan": "^1.10.0"
+  }
+}
